@@ -287,7 +287,7 @@ public final class DeviceIO
             throw new IllegalArgumentException("Cannot send message 'null'.");
         }
 
-        // Codes_SRS_DEVICE_IO_12_001: [The function shall set the connection string on the message if the iotHubConnectionString parameter is not null.]
+        // Codes_SRS_DEVICE_IO_12_001: [The function shall set the deviceId on the message if the deviceId parameter is not null.]
         if (deviceId != null)
         {
             message.setConnectionDeviceId(deviceId);

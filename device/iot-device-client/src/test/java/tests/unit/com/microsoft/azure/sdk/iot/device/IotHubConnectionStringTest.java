@@ -116,7 +116,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
 
         // act
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -146,7 +146,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=test%3Bdevice;SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
+                        "DeviceId=test%3Bdevice;SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
 
         // act
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -201,7 +201,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -216,7 +216,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=;CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -253,7 +253,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=iot Hub Name.azure.net;CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -279,7 +279,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=azure;CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -320,7 +320,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=;SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
+                        "DeviceId=;SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -357,7 +357,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID;
+                        "DeviceId=" + VALID_DEVICEID;
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -372,7 +372,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -387,7 +387,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -438,7 +438,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=";
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -453,7 +453,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=;SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=;SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -468,7 +468,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN;
 
         // act
         Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -518,7 +518,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessKey=" + VALID_SHARED_ACCESS_KEY + ";";
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
                 new Class[] {String.class}, connString);
         assertConnectionString(iotHubConnectionString, VALID_HOSTNAME, VALID_DEVICEID, VALID_SHARED_ACCESS_KEY, null);
@@ -541,7 +541,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
                 new Class[] {String.class}, connString);
         assertConnectionString(iotHubConnectionString, VALID_HOSTNAME, VALID_DEVICEID, null, VALID_SHARED_ACCESS_TOKEN);
@@ -561,7 +561,7 @@ public class IotHubConnectionStringTest
         // arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + EXPIRED_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + EXPIRED_SHARED_ACCESS_TOKEN + ";";
 
         new NonStrictExpectations()
         {
@@ -603,7 +603,7 @@ public class IotHubConnectionStringTest
         String expectedToken = "new token";
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
 
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
                 new Class[] {String.class}, connString);
@@ -623,7 +623,7 @@ public class IotHubConnectionStringTest
         //arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
 
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
                 new Class[] {String.class}, connString);
@@ -638,7 +638,7 @@ public class IotHubConnectionStringTest
     {
         //arrange
         final String connString =
-                "HostName=" + VALID_HOSTNAME + ";deviceId=" + VALID_DEVICEID + ";x509=true;";
+                "HostName=" + VALID_HOSTNAME + ";DeviceId=" + VALID_DEVICEID + ";x509=true;";
 
         //act
         Object iotHubConnectionString = Deencapsulation.newInstance(Class.forName(IOTHUB_CONNECTION_STRING_CLASS),
@@ -656,7 +656,7 @@ public class IotHubConnectionStringTest
     {
         //arrange
         final String connString =
-                "HostName=" + VALID_HOSTNAME + ";deviceId=" + VALID_DEVICEID + ";x509=true;";
+                "HostName=" + VALID_HOSTNAME + ";DeviceId=" + VALID_DEVICEID + ";x509=true;";
 
         IotHubConnectionString iotHubConnectionString = Deencapsulation.newInstance(IotHubConnectionString.class, new Class[] {String.class}, connString);
 
@@ -674,7 +674,7 @@ public class IotHubConnectionStringTest
         //arrange
         final String connString =
                 "HostName=" + VALID_HOSTNAME + ";CredentialType=SharedAccessKey;CredentialScope=Device;" +
-                        "deviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
+                        "DeviceId=" + VALID_DEVICEID + ";SharedAccessSignature=" + VALID_SHARED_ACCESS_TOKEN + ";";
 
         IotHubConnectionString iotHubConnectionString = Deencapsulation.newInstance(IotHubConnectionString.class, new Class[] {String.class}, connString);
 
